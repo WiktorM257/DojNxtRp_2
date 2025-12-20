@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Hierarchia służbowa | Department of Justice</title>
+    <title> Rada Departamentu | Department of Justice</title>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
@@ -24,289 +23,228 @@
 
 <body>
 
+<!-- ================= NAVBAR ================= -->
 <nav id="navbar" role="navigation" aria-label="Główna nawigacja">
     <div class="nav-container">
         <a href="https://dojnxtrp.pl/" class="logo">
             <i class="fas fa-balance-scale"></i> DOJ
         </a>
 
-  <ul class="nav-links">
-    <li>
-        <a href="https://dojnxtrp.pl/">Strona Główna</a>
-    </li>
+        <ul class="nav-links">
+            <li><a href="https://dojnxtrp.pl/">Strona Główna</a></li>
 
-    <li class="has-submenu">
-        <a href="#">
-            Struktura <i class="fas fa-chevron-down"></i>
-        </a>
-        <ul class="submenu">
-            <li>
-                <a href="https://rada.dojnxtrp.pl/">Rada Departamentu</a>
+            <li class="has-submenu">
+                <a href="#">
+                    Struktura <i class="fas fa-chevron-down"></i>
+                </a>
+                <ul class="submenu">
+                    <li><a href="https://rada.dojnxtrp.pl/">Rada Departamentu</a></li>
+                    <li><a href="https://hierarchia.dojnxtrp.pl/">Hierarchia służbowa</a></li>
+
+                    <li class="submenu-divider"></li>
+
+                    <li><a href="https://prokuratura.dojnxtrp.pl/">Prokuratura</a></li>
+                    <li><a href="https://sadownictwo.dojnxtrp.pl/">Sądownictwo</a></li>
+                    <li><a href="https://adwokatura.dojnxtrp.pl/">Adwokatura</a></li>
+                    <li><a href="https://irs.dojnxtrp.pl/">Internal Revenue Service (IRS)</a></li>
+                    <li><a href="https://administracja.dojnxtrp.pl/">Administracja</a></li>
+                </ul>
             </li>
-            <li>
-                <a href="https://hierarchia.dojnxtrp.pl/">Hierarchia służbowa</a>
-            </li>
+
+            <li><a href="https://dokumenty.dojnxtrp.pl/">Dokumenty</a></li>
+            <li><a href="https://rekrutacja.dojnxtrp.pl/">Rekrutacja</a></li>
         </ul>
-    </li>
+    </div>
 
-    <li>
-        <a href="https://dokumenty.dojnxtrp.pl/">Dokumenty</a>
-    </li>
-
-    <li>
-        <a href="https://rekrutacja.dojnxtrp.pl/">Rekrutacja</a>
-    </li>
-</ul>
-</div>
-
-    
-    <!-- DODAJ TEN PRZYCISK -->
-    <button id="hamburger" aria-label="Menu" aria-expanded="false">
+    <button id="hamburger" class="hamburger" aria-label="Menu" aria-expanded="false">
         <span></span>
         <span></span>
         <span></span>
     </button>
 </nav>
+
+<!-- OVERLAY -->
+<div id="overlay" class="overlay"></div>
+
+<!-- ================= MOBILE MENU ================= -->
 <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
-<a href="https://dojnxtrp.pl/">Strona główna</a>
-<a href="https://dokumenty.dojnxtrp.pl/">Dokumenty</a>
-<a href="https://rada.dojnxtrp.pl/">Rada Departamentu</a>
-<a href="https://hierarchia.dojnxtrp.pl/">Hierarchia służbowa</a>
-<a href="https://rekrutacja.dojnxtrp.pl/">Rekrutacja</a>
+
+    <div class="mobile-main-menu">
+        <a href="https://dojnxtrp.pl/">Strona główna</a>
+
+        <a href="#" class="mobile-open-structure">
+            Struktura <i class="fas fa-chevron-right"></i>
+        </a>
+
+        <a href="https://dokumenty.dojnxtrp.pl/">Dokumenty</a>
+        <a href="https://rekrutacja.dojnxtrp.pl/">Rekrutacja</a>
+    </div>
+
+    <div class="mobile-structure-menu">
+        <a href="#" class="mobile-back">
+            <i class="fas fa-chevron-left"></i> Wróć
+        </a>
+
+          <a href="https://rada.dojnxtrp.pl/">Rada Departamentu</a>
+        <a href="https://hierarchia.dojnxtrp.pl/">Hierarchia służbowa</a>
+        <a href="https://administracja.dojnxtrp.pl/">Administracja</a>
+        <a href="https://prokuratura.dojnxtrp.pl/">Prokuratura</a>
+        <a href="https://sadownictwo.dojnxtrp.pl/">Sądownictwo</a>
+        <a href="https://adwokatura.dojnxtrp.pl/">Adwokatura</a>
+        <a href="https://irs.dojnxtrp.pl/">Internal Revenue Service (IRS)</a>
+    </div>
+
 </div>
+
+<!-- ================= MAIN ================= -->
 <main id="maincontent">
 
-    <!-- PROFIL DOJ -->
-       <section class="page-section">
+    <section class="page-section">
         <div class="section-header fade-in">
-            <h2>Hierarchia służbowa</h2>
-            <p>Struktura stanowisk Department of Justice – obsada kierownicza</p>
+            <h2>Rada Departamentu</h2>
+            <p>Organ decyzyjny Department of Justice</p>
         </div>
     </section>
 
+    <!-- ================= PROFILES ================= -->
 
-       <section class="doj-profile">
+    <section class="doj-profile">
         <div class="doj-profile-inner">
-
             <div class="doj-profile-left">
-                <img src="gallanonim.png" alt="Seth Vastaan – Attorney General">
+                <img src="gallanonim.png" alt="Walter Brennan">
             </div>
-
             <div class="doj-profile-right">
                 <h4 class="doj-rank">Director of Justice</h4>
                 <h2 class="doj-name">Walter Brennan</h2>
-
                 <p>
                     Walter Brennan pełni funkcję Dyrektora Wymiaru Sprawiedliwości. Odpowiada za strategiczny
-                    nadzór nad funkcjonowaniem całego systemu wymiaru sprawiedliwości, wyznaczanie kierunków
-                    polityki instytucjonalnej oraz koordynację działań kluczowych organów podległych
-                    Department of Justice.
+                    nadzór nad funkcjonowaniem całego systemu, wyznaczanie kierunków rozwoju
+                    oraz koordynację działań kluczowych organów DOJ.
                 </p>
             </div>
-
         </div>
     </section>
 
     <section class="doj-profile">
         <div class="doj-profile-inner">
-
             <div class="doj-profile-left">
-                <img src="gallanonim.png" alt="Seth Vastaan – Attorney General">
+                <img src="gallanonim.png" alt="Seth Vastaan">
             </div>
-
             <div class="doj-profile-right">
-                <h4 class="doj-rank">Attorney GENERAL</h4>
+                <h4 class="doj-rank">Attorney General</h4>
                 <h2 class="doj-name">Seth Vastaan</h2>
-
                 <p>
-                    Seth Vastaan pełni funkcję Prokuratora Generalnego. Odpowiada za nadzór nad kluczowymi
-                    postępowaniami prokuratorskimi oraz koordynację działań w sprawach o najwyższym priorytecie
-                    dla wymiaru sprawiedliwości.
+                    Seth Vastaan pełni funkcję Prokuratora Generalnego. Sprawuje nadzór nad
+                    kluczowymi postępowaniami prokuratorskimi oraz koordynuje sprawy
+                    o najwyższym priorytecie dla wymiaru sprawiedliwości.
                 </p>
             </div>
-
         </div>
     </section>
 
-  
-
-
     <section class="doj-profile">
         <div class="doj-profile-inner">
-
             <div class="doj-profile-left">
-                <img src="gallanonim.png" alt="Charles Evans – Supreme Court Justice">
+                <img src="gallanonim.png" alt="Charles Evans">
             </div>
-
             <div class="doj-profile-right">
-                <h4 class="doj-rank">Superior COURT Judge</h4>
+                <h4 class="doj-rank">Superior Court Judge</h4>
                 <h2 class="doj-name">Charles Evans</h2>
-
                 <p>
-                    Charles Evans pełni funkcję Sędziego Najwyższego. Rozpatruje sprawy o szczególnym znaczeniu prawnym
-                    oraz stoi na straży jednolitego stosowania prawa w systemie sądownictwa.
+                    Charles Evans pełni funkcję Sędziego Najwyższego. Rozpatruje sprawy
+                    o szczególnym znaczeniu prawnym oraz dba o jednolite stosowanie prawa.
                 </p>
             </div>
-
         </div>
     </section>
 
     <section class="doj-profile">
         <div class="doj-profile-inner">
-
             <div class="doj-profile-left">
-                <img src="gallanonim.png" alt="Kazhotto Miyagawa – President of the Supreme Court">
+                <img src="gallanonim.png" alt="Kazuhito Miyagawa">
             </div>
-
             <div class="doj-profile-right">
-                <h4 class="doj-rank">Associate Justices</h4>
-                <h2 class="doj-name">Kazhotto Miyagawa</h2>
-
+                <h4 class="doj-rank">President of the Supreme Court</h4>
+                <h2 class="doj-name">Kazuhito Miyagawa</h2>
                 <p>
-                    Kazuhito Miyagawa pełni funkcję Prezesa Sądu Najwyższego. Odpowiada za organizację pracy sądu,
-                    nadzór nad przebiegiem postępowań oraz kierowanie składem orzekającym w najważniejszych sprawach.
+                    Kazuhito Miyagawa odpowiada za organizację pracy Sądu Najwyższego,
+                    nadzór nad postępowaniami oraz kierowanie składem orzekającym
+                    w najważniejszych sprawach.
                 </p>
             </div>
-
         </div>
     </section>
 
-
-
     <section class="doj-profile">
         <div class="doj-profile-inner">
-
             <div class="doj-profile-left">
-                <img src="gallanonim.png" alt="Pablo Mysershmiten – Director of Internal Revenue Service">
+                <img src="gallanonim.png" alt="Pablo Mysershmiten">
             </div>
-
             <div class="doj-profile-right">
-                <h4 class="doj-rank">DIRECTOR OF INTERNAL REVENUE SERVICE</h4>
+                <h4 class="doj-rank">Director of Internal Revenue Service</h4>
                 <h2 class="doj-name">Pablo Mysershmiten</h2>
-
                 <p>
-                    Pablo Myserhmiten jest Dyrektorem Internal Revenue Service. Nadzoruje działania związane z kontrolą
-                    finansową, przestępstwami skarbowymi oraz postępowaniami dotyczącymi źródeł pochodzenia majątku.
+                    Pablo Mysershmiten nadzoruje działania IRS, w tym kontrole finansowe,
+                    postępowania skarbowe oraz sprawy dotyczące nieujawnionych źródeł dochodu.
                 </p>
             </div>
-
         </div>
     </section>
 
- 
-
     <section class="doj-profile">
         <div class="doj-profile-inner">
-
             <div class="doj-profile-left">
-                <img src="gallanonim.png" alt="Mia Miller – Director of Administration">
+                <img src="gallanonim.png" alt="Mia Miller">
             </div>
-
             <div class="doj-profile-right">
-                <h4 class="doj-rank">DIRECTOR OF ADMINISTRATION</h4>
+                <h4 class="doj-rank">Director of Administration</h4>
                 <h2 class="doj-name">Mia Miller</h2>
-
                 <p>
-                    Mia Miller pełni funkcję Dyrektora Administracji. Odpowiada za funkcjonowanie zaplecza organizacyjnego
-                    Department of Justice: obieg dokumentów, koordynację administracyjną oraz wsparcie pracy departamentu.
+                    Mia Miller odpowiada za zaplecze administracyjne DOJ,
+                    obieg dokumentów oraz wsparcie organizacyjne całego departamentu.
                 </p>
             </div>
-
         </div>
     </section>
 
 </main>
 
+<!-- ================= FOOTER ================= -->
 <footer>
     <div class="footer-content">
+
         <div class="footer-section">
             <h4>Department of Justice</h4>
-            <p>
-                Oficjalna strona Departamentu Sprawiedliwości<br>
-                NXTRP 2.0
-            </p>
+            <p>Oficjalna strona Departamentu Sprawiedliwości<br>NXTRP 2.0</p>
         </div>
 
-       <div class="footer-section">
-    <h4>Szybkie linki</h4>
-<a href="https://dojnxtrp.pl/">Strona główna</a>
-<a href="https://dokumenty.dojnxtrp.pl/">Dokumenty</a>
-<a href="https://rada.dojnxtrp.pl/">Rada Departamentu</a>
-<a href="https://hierarchia.dojnxtrp.pl/">Hierarchia służbowa</a>
-<a href="https://rekrutacja.dojnxtrp.pl/">Rekrutacja</a>
-</div>
-
+        <div class="footer-section">
+            <h4>Szybkie linki</h4>
+            <a href="https://dojnxtrp.pl/">Strona główna</a>
+            <a href="https://dokumenty.dojnxtrp.pl/">Dokumenty</a>
+            <a href="https://rada.dojnxtrp.pl/">Rada Departamentu</a>
+            <a href="https://hierarchia.dojnxtrp.pl/">Hierarchia służbowa</a>
+            <a href="https://rekrutacja.dojnxtrp.pl/">Rekrutacja</a>
+        </div>
 
         <div class="footer-section">
             <h4>Kontakt</h4>
-                <a href="https://discord.gg/amTdxHyAs6" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i> Aplikacja Departamentu </a>
-                <a href="https://discord.gg/h5h69dvCpX" target="_blank" rel="noopener noreferrer"><i class="fab fa-discord"></i>  NXTRP 2.0 </a>
+            <a href="https://discord.gg/amTdxHyAs6" target="_blank">
+                <i class="fab fa-discord"></i> Aplikacja Departamentu
+            </a>
+            <a href="https://discord.gg/h5h69dvCpX" target="_blank">
+                <i class="fab fa-discord"></i> NXTRP 2.0
+            </a>
         </div>
+
     </div>
 
     <div class="footer-bottom">
-        <p>&copy; 2025 NXTRP 2.0 – DOJ. Wszelkie prawa zastrzeżone.</p>       
+        <p>&copy; 2025 NXTRP 2.0 – DOJ. Wszelkie prawa zastrzeżone.</p>
         <p>&copy; Made by ve_xs.</p>
- 
     </div>
 </footer>
-
-<script>
-    (function() {
-        const navLinks = document.querySelectorAll('.nav-links a');
-        const current = location.pathname.split('/').pop() || 'index.html';
-        navLinks.forEach(a => {
-            const href = a.getAttribute('href');
-            if (href === current) {
-                a.classList.add('active');
-                a.setAttribute('aria-current', 'page');
-            }
-        });
-
-        document.querySelectorAll('.btn-doc').forEach(btn => {
-            if (!btn.hasAttribute('aria-label')) {
-                btn.setAttribute('aria-label', btn.textContent.trim());
-            }
-        });
-
-        const hamburger = document.getElementById('hamburger');
-        const mobileMenu = document.getElementById('mobileMenu');
-        
-        if (hamburger && mobileMenu) {
-            hamburger.setAttribute('aria-expanded', 'false');
-            
-            hamburger.addEventListener('click', () => {
-                const open = mobileMenu.classList.toggle('open');
-                hamburger.classList.toggle('open', open);
-                hamburger.setAttribute('aria-expanded', String(open));
-                mobileMenu.setAttribute('aria-hidden', String(!open));
-            });
-            
-            mobileMenu.querySelectorAll('a').forEach(a => {
-                a.addEventListener('click', () => {
-                    mobileMenu.classList.remove('open');
-                    hamburger.classList.remove('open');
-                    hamburger.setAttribute('aria-expanded', 'false');
-                    mobileMenu.setAttribute('aria-hidden', 'true');
-                });
-            });
-            
-            document.addEventListener('keydown', (ev) => {
-                if (ev.key === 'Escape' && mobileMenu.classList.contains('open')) {
-                    mobileMenu.classList.remove('open');
-                    hamburger.classList.remove('open');
-                    hamburger.setAttribute('aria-expanded', 'false');
-                    mobileMenu.setAttribute('aria-hidden', 'true');
-                }
-            });
-        }
-    })();
-</script>
 
 <script src="core.js"></script>
 </body>
 </html>
-
-
-
-
