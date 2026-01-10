@@ -1,8 +1,4 @@
-// =====================
-// CORE.JS – FINAL (FIXED)
-// =====================
 
-// Loader (jeśli masz .loader w HTML)
 window.addEventListener('load', () => {
     setTimeout(() => {
         const loader = document.querySelector('.loader');
@@ -10,9 +6,7 @@ window.addEventListener('load', () => {
     }, 800);
 });
 
-// =====================
-// NAVBAR SCROLL EFFECT
-// =====================
+
 window.addEventListener('scroll', () => {
     const nav = document.getElementById('navbar');
     if (!nav) return;
@@ -21,9 +15,7 @@ window.addEventListener('scroll', () => {
     else nav.classList.remove('scrolled');
 });
 
-// =====================
-// MOBILE MENU – JEDYNA LOGIKA
-// =====================
+
 document.addEventListener('DOMContentLoaded', () => {
 
     const hamburger = document.getElementById('hamburger');
@@ -61,21 +53,14 @@ document.addEventListener('DOMContentLoaded', () => {
         mobileMenu.setAttribute('aria-hidden', 'true');
     }
 
-    // =====================
-    // HAMBURGER CLICK
-    // =====================
+
     hamburger.addEventListener('click', () => {
         mobileMenu.classList.contains('open') ? closeMenu() : openMenu();
     });
 
-    // =====================
-    // OVERLAY CLICK
-    // =====================
     overlay.addEventListener('click', closeMenu);
 
-    // =====================
-    // STRUKTURA SUBMENU
-    // =====================
+
     if (openStructure) {
         openStructure.addEventListener('click', (e) => {
             e.preventDefault();
@@ -92,18 +77,14 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // =====================
-    // ZAMYKANIE MENU PO LINKU
-    // =====================
+
     mobileMenu.querySelectorAll(
         'a:not(.mobile-open-structure):not(.mobile-back)'
     ).forEach(link => {
         link.addEventListener('click', closeMenu);
     });
 
-    // =====================
-    // ESC = ZAMKNIJ MENU
-    // =====================
+
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && mobileMenu.classList.contains('open')) {
             closeMenu();
@@ -112,9 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-// =====================
-// FADE-IN (JEŚLI UŻYWASZ)
-// =====================
+
 const fadeElements = document.querySelectorAll('.fade-in');
 if (fadeElements.length) {
     const observer = new IntersectionObserver(entries => {
@@ -128,9 +107,6 @@ if (fadeElements.length) {
     fadeElements.forEach(el => observer.observe(el));
 }
 
-// =====================
-// SMOOTH SCROLL (#anchors)
-// =====================
 document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', e => {
         const target = document.querySelector(link.getAttribute('href'));
@@ -139,3 +115,4 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
     });
 });
+
